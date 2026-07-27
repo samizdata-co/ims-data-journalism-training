@@ -1,0 +1,11 @@
+---
+title: "Analysis: IMS Data Journalism training"
+author: "Nicu Calcea"
+abstract: "One-day Data Analysis and Data Storytelling training for International Media Support (IMS)."
+date: today
+format: pdf
+---
+
+Write your analysis in this file. You can use Markdown, LaTeX, and code blocks.
+
+
