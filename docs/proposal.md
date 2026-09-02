@@ -28,8 +28,6 @@ A one-day, hands-on training session designed to equip journalists with practica
 
 The session will target journalists at the beginner or intermediate level. No coding background required, although basic familiarity with data exploration tools such as Microsoft Excel or Google Sheets will be expected.
 
-The approach can be adjusted based on a short pre-training survey to identify the participants' interests and technical skills.
-
 Participants will also receive a post-training resource pack with slides, tools, links to guides, etc.
 
 ### Objectives
@@ -58,7 +56,7 @@ The training will be conducted over one day, 10:00-17:00. It will be conducted i
 
 : Rough session agenda {tbl-colwidths="[15,85]" .striped}
 
-The agenda is subject to adjustments as we develop the curriculum and based on the pre-training survey results.
+The agenda is subject to adjustments as we develop the curriculum.
 
 ## Fee
 
