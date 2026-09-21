@@ -22,6 +22,24 @@ Especially on:
 - **Create data-driven stories** that explain complex issues such as inflation, migration, elections, climate impacts, or public spending through interactive charts, maps, dashboards, and visualizations.
 - **Use AI and digital tools responsibly** to clean, analyze, and visualize large datasets, making investigative work more efficient while maintaining editorial standards.
 
+### Gender aspect
+
+For the data training, I would recommend going beyond simply encouraging participants to use sex-disaggregated data. The gender-transformative element could focus on whose reality the data represents, who is missing, and what inequalities or power relations may be hidden in aggregated data. When learning to find and analyse datasets, participants could be encouraged to ask who collected the data, which groups are represented or invisible, whether different groups experience an issue differently, and how gender can intersect with factors such as age, location, disability or socio-economic situation. Importantly, the absence of data can itself be an important finding! What is not being counted may tell us something about whose experiences are not being prioritised.
+
+The same perspective can be incorporated into the storytelling and visualisation exercises. When creating charts, participants could consider whether their choice of visualisation makes inequalities visible or unintentionally hides them, whether comparisons are meaningful, and whether the framing reinforces existing stereotypes. Examples of data journalism that have exposed inequalities, challenged stereotypes or made underrepresented experiences visible would be particularly useful. The key shift would be from simply asking “What does the data say?” to asking “Whose reality does the data represent, whose reality is missing, and what can the data help us understand about inequality?”
+
+### Polling
+
+2023
+Login: hun@mediasupport.org
+Parola: 8xZn8E
+https://b.ipsos.com.ua/IB_Report_M23/login.html
+
+2025
+Login: ogu@mediasupport.org
+Parola: FxnXueFF
+https://b.ipsos.com.ua/IB_Report_M25/login.html
+
 ## Setup instructions
 
 To render the Quarto notebook, run `quarto render` on your `.qmd` file in `notebooks`.
