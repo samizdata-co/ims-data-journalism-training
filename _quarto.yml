@@ -31,11 +31,10 @@ format:
     toc-depth: 2
     number-sections: true
     colorlinks: true
-    linkcolor: samizdataaccent
-    urlcolor: samizdataaccent
-    citecolor: samizdatainfo
-    mainfont: Roboto
-    sansfont: Roboto
-    monofont: Roboto Mono
+    linkcolor: 7B003C
+    urlcolor: 7B003C
+    citecolor: 7B003C
+    mainfont: Work Sans
+    sansfont: Space Grotesk
     include-in-header: samizdata-pdf.tex
     include-before-body: samizdata-before-body.tex

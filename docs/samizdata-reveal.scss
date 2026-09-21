@@ -1,0 +1,110 @@
+/* SAMIZDATA reveal theme for docs/presentation.md.
+   Semantic roles from canonical _brand.yml: paper surface #FBF9F4,
+   ink #1B1C19, muted body #574146, raspberry accent-text #7B003C,
+   primary-container fill #9F1853. Sharp corners, tonal depth. */
+
+/*-- scss:defaults --*/
+/* Reveal / Bootstrap Sass variables (light-mode roles) */
+$body-bg: #FBF9F4;
+$body-color: #574146;
+$heading-color: #1B1C19;
+$link-color: #7B003C;
+$link-decoration: underline;
+$link-hover-color: #9F1853;
+$text-muted: #574146;
+$code-bg: #F0EEE9;
+$code-color: #1B1C19;
+$font-family-sans-serif: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+$presentation-heading-font: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+$presentation-heading-color: #1B1C19;
+$presentation-heading-font-weight: 900;
+$presentation-heading-line-height: 0.95;
+
+/*-- scss:rules --*/
+.reveal {
+  font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  background-color: #FBF9F4;
+  color: #574146;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #1B1C19;
+}
+
+.reveal h5,
+.reveal .eyebrow {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* One raspberry emphasis per slide: links, strong accents */
+.reveal a {
+  color: #7B003C;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.reveal a:hover {
+  color: #9F1853;
+}
+
+.reveal blockquote {
+  border-left: 4px solid #9F1853;
+  background: #F5F3EE;
+  color: #1B1C19;
+  box-shadow: none;
+}
+
+/* Sharp structural forms: no rounded slides, cards, code, images */
+.reveal .slides section,
+.reveal pre,
+.reveal code,
+.reveal img,
+.reveal .slide-logo {
+  border-radius: 0;
+}
+
+.reveal pre {
+  background: #F0EEE9;
+  border: 1px solid rgba(138, 112, 118, 0.28);
+  box-shadow: none;
+}
+
+.reveal .footer,
+.reveal .slide-number {
+  font-family: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  color: #574146;
+}
+
+/* Visible keyboard focus in accent-text */
+.reveal a:focus-visible,
+.reveal button:focus-visible {
+  outline: 0.125rem solid #7B003C;
+  outline-offset: 0.1875rem;
+}
+
+/* Title slide: warm paper, deep raspberry rule */
+.reveal .title-slide {
+  text-align: left;
+}
+
+.reveal .title-slide h1 {
+  border-bottom: 4px solid #9F1853;
+  padding-bottom: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal *,
+  .wave {
+    animation: none !important;
+    transition-duration: 0ms !important;
+  }
+}

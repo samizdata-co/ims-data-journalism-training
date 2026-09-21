@@ -3,12 +3,13 @@ title: "Analiză și Storytelling de Date"
 author: "Nicu Calcea"
 format:
   revealjs:
-    # theme: [default, css/nicu.scss]
+    theme: [default, samizdata-reveal.scss]
+    logo: ../assets/logos/mark.svg
+    footer: "SAMIZDATA · Analiză și Storytelling de Date"
+    slide-number: true
     multiplex: true
-    chalkboard: 
+    chalkboard:
       buttons: false
-    # header-includes:
-    # - "<script defer src='src/bg-change.js'></script>"
 filters:
   - filters/newpagelink.lua
 #   - quarto
@@ -74,7 +75,30 @@ Am absolvit și predat la **City, University of London**, și am făcut jurnalis
 
 ## Program {.smaller}
 
+- 10:00 — Introduceri și obiective
+- 10:15 — Ce este jurnalismul de date?
+- 11:30 — Baze de date
+- 11:45 — Exercițiu: Disparitatea salarială de gen
+- *12:30 — Pauză*
+- 13:30 — Instrumente AI
+- 14:15 — Vizualizarea datelor
+- 15:00 — Exercițiu: Prenumele nou-născuților
+- 15:30 — Exercițiu de grup: redactarea unui scurt articol pe baza datelor reale
+- 16:30 — Întrebări și răspunsuri, resurse suplimentare, discuții
+
+<!-- - 10:00–10:15 — Introduceri și obiective
+- 10:15–11:30 — Ce este jurnalismul de date?
+- 11:30–11:45 — Baze de date
+- 11:45–12:30 — Exercițiu: Disparitatea salarială de gen
+- *12:30–13:30 — Pauză de prânz*
+- 13:30–13:00 — Instrumente AI
+- 14:00–15:00 — Vizualizarea datelor
+- 15:00–15:30 — Exercițiu: TBD
+- 15:30–16:30 — Exercițiu de grup: redactarea unui scurt articol pe baza datelor reale
+- 16:30–17:00 — Întrebări și răspunsuri, resurse suplimentare, discuții -->
+
 ::: {.incremental}
+<!--
 - 10:00–10:30 — Introduceri și obiective
 - 10:30–11:30 — Baze de date guvernamentale și externe
 - 11:30–12:30 — Curățarea și structurarea datelor
@@ -83,6 +107,7 @@ Am absolvit și predat la **City, University of London**, și am făcut jurnalis
 - 14:30–15:30 — Vizualizarea datelor
 - 15:30–16:30 — Exercițiu de grup: redactarea unui scurt articol pe baza datelor reale
 - 16:30–17:00 — Întrebări și răspunsuri, resurse suplimentare, discuții
+-->
 :::
 
 
@@ -168,7 +193,7 @@ Datele pot veni din surse oficiale, de la societatea civilă, alte terțe părț
 ::: {.column width="33.33%"}
 :::  {.fragment}
 ##### Curățarea și structurarea datelor
-În majoritatea cazurilor, reporterul trebuie să filtreze, sorteze și să corecteze erori sau informații lipsă đîn setul de date.
+În majoritatea cazurilor, reporterul trebuie să filtreze, sorteze și să corecteze erori sau informații lipsă din setul de date.
 :::
 :::
 :::
@@ -217,37 +242,641 @@ Sursă: [Paul Bradshaw](https://twitter.com/paulbradshaw/status/1445015559742050
 :::
 
 
-# Baze de date guvernamentale și externe {fullscreen=true}
+# Baze de date {fullscreen=true}
 
 <iframe class="stretch" data-src="https://samizdata.co/"></iframe>
 ::: footer
 Soursă: [SAMIZDATA](https://samizdata.co/)
 :::
 
-## Instrumente AI pentru simplificarea cercetării bazelor de date
-
-- [ ] Showcase AI skills
 
 
-## Execițiu: prenume de copii
+# Exercițiu: Disparitatea salarială de gen
+
+- [Eight out of ten firms pay men more than women](https://www.bbc.com/news/business-65179430)
+- [What is the gender pay gap where you work?](https://www.bbc.com/news/business-65207049)
+- [How big is the gender pay gap in the mining industry in Britain and who are the worst offenders?](https://www.mining-technology.com/features/exclusive-how-big-is-the-gender-pay-gap-in-the-mining-industry-in-britain-and-who-are-the-worst-offenders/)
+
+
+## Exercițiu: Disparitatea salarială de gen
+
+1. Deschideți [pagina Statbank](https://statbank.statistica.md/)
+2. Accesați secțiunea "[Statistica gender](https://statbank.statistica.md/PxWeb/pxweb/ro/50%20Statistica%20gender/)" -> Abilitarea economica a femeilor -> Disparitatea salariala de gen pe activitati economice, 2013-2025
+3. Selectați toate activitățile economice și anii 2013-2025, apoi apăsați "Continuă"
+4. Descărcați fișierul Excel și încărcați-l în Google Drive, deschideți-l cu Google Sheets
+
+## Exercițiu: Disparitatea salarială de gen
+
+1. Copiați foaia de calcul, nu faceți modificări în original. 
+2. Ștergeți antetul și subsolul.
+3. View -> Freeze top row -> View -> Freeze first column.
+4. Sortați după coloana 2025.
+5. Ștergeți rândurile "B+C+D+E Industrie total", "S Alte activitati de servicii" și "0 Activitati economice - total".
+
+::: notes
+Selectați foaia de calcul -> Protect sheet -> Show a warning when editing this sheet.
+
+Opțional: Adăugați un nume pentru prima coloană, ștergeți literele din numele activităților, adăugați diacritice și simplificați numele activităților.
+:::
+
+## Exercițiu: Disparitatea salarială de gen
+
+1. Creați un grafic nou în [Datawrapper](https://www.datawrapper.de/).
+2. Copiați tabelul creat în Datawrapper, selectați limba română, bar chart.
+3. Personalizați graficul, adăugați titluri și surse. Aveți grijă la [diferența dintre puncte și puncte procentuale](https://calculprocente.com/art/procent-%C8%99i-punct-procentual).
+4. Publicați și/sau descărcați graficul.
+
+::: notes
+Cât este 10% + 50%? Răspunsul corect este 15%, nu 60%.
+:::
+
+
+## GenderPulse
+
+<iframe class="stretch" data-src="https://genderpulse.md/ro"></iframe>
+
+::: footer
+Sursă: [GenderPulse](https://genderpulse.md/ro)
+:::
+
+
+## Datele nu sunt neutre
+
+- Datele publicate reflectă prejudecățile și limitele autorilor.
+- Majoritatea indicatorilor — atât în Moldova [cât și în afară](https://blogs.worldbank.org/en/opendata/unpacking-mystery-missing-gender-data) — nu sunt dezagregate pe gen.
+- Datele agregate pot ascunde diferențe importante. La ce vârste și în ce grupuri sociale sunt disparitățile de gen mai mari?
+- Când datele nu există, [creați-le](https://texty.org.ua/projects/114050/spoon-of-hate-online-violence-against-ukrainian-female-journalists-in-youtube-comments/)!
+
+::: notes
+Menționează că o mare parte din explicație este [concediul de maternitate](https://www.vox.com/2018/2/19/17018380/gender-wage-gap-childcare-penalty).
+:::
+
+## Asigurați-vă că munca voastră e verificabilă {.smaller}
+
+Concepte importante:
+
+::: columns
+::: {.column width="50%"}
+Documentație
+
+- păstrați neschimbate referințele la datele sursă
+- dacă este necesar, adăugați un dicționar de date sau notați ce ați făcut
+- folosiți denumiri adecvate pentru coloane (nu „greutate”) și foi de calcul (nu „Foaie1”)
+- o întrebare = o foaie de calcul
+:::
+
+::: {.column width="50%"}
+Reproductibilitate
+
+- efectuați analizele pe o foaie nouă, niciodată pe datele originale
+- protejați foaia de calcul originală
+- faceți copii de rezervă frecvent
+:::
+:::
+
+[Mai multe detalii de la OCCRP](https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit).
+
+::: notes
+https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit
+:::
+
+## Pregătirea datelor
+
+<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets"></iframe>
+
+::: footer
+Sursă: [Datawrapper](https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets)
+:::
+
+## {#dirty-data data-menu-title="Dirty Data" .smaller}
+
+
+::: columns
+::: {.column width="33.33%"}
+##### Date lipsă
+Uneori, înregistrările dispar sau nu au fost colectate niciodată. Nu este întotdeauna evident când asta se întâmplă.
+:::
+
+::: {.column width="33.33%"}
+##### Date duplicate
+Înregistrările pot fi repetate, fie din cauza unor erori tehnice, fie din cauza introducerii repetate a datelor.
+:::
+
+::: {.column width="33.33%"}
+##### Greșeli ortografice
+Oamenii fac greșeli. Presupuneți că orice set de date creat manual de oameni conține greșeli ortografice.
+:::
+
+::: {.column width="33.33%"}
+<br>
+
+##### Formatare necorespunzătoare
+Unele foi de calcul sunt concepute pentru a fi citite de oameni, nu de calculatoare. Prin urmare, trebuie să învățăm programele să le citească corect.
+:::
+
+::: {.column width="33.33%"}
+<br>
+
+##### Erori de analiză
+O formulă Excel greșită? Caractere n€©unoș©uț€? O versiune veche de Excel? Toate acestea pot afecta datele tale.
+:::
+
+::: {.column width="33.33%"}
+<br>
+
+##### Date inconsistente
+O coloană poate conține unități de măsură diferite, poate denumi categoriile în mod diferit sau poate înregistra metodologii diferite.
+:::
+:::
+
+## Ghidul datelor eronate
+
+![](media/guide-bad-data.png)
+
+::: footer
+Sursă: [Quartz](https://github.com/Quartz/bad-data-guide)
+:::
+
+
+## {#inflation-screenshot data-menu-title="Date inflație ONS" .smaller}
+
+![](media/inflation-ons-screenshot.png)
+
+::: footer
+Sursă: [ONS](https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation)
+:::
+
+
+##  {#basic-excel-formulas-1-recap data-menu-title="Formule Excel"}
+
+::: columns
+::: {.column width="33.33%"}
+##### =A1+A2
+Calculează suma (+) sau diferența (-) dintre două numere.
+:::
+
+::: {.column width="33.33%"}
+##### =A1*B1
+Multiplică (*) sau divizează două numere.
+:::
+
+::: {.column width="33.33%"}
+##### =SUM()
+Calculează suma unui șir de numere (de exemplu, o coloană).
+:::
+
+::: {.column width="33.33%"}
+##### =AVERAGE()
+Calculează media unui șir de numere.
+:::
+
+::: {.column width="33.33%"}
+##### [=MEDIAN()]
+Calculează [mediana](https://ro.wikipedia.org/wiki/Median%C4%83_(statistic%C4%83)) unui șir de numere.
+:::
+
+::: {.column width="33.33%"}
+##### =(NOU-VECHI)/VECHI
+Calculează (des)creșterea procentuală între două valori.
+:::
+:::
+
+
+##  {#basic-excel-formulas-2 data-menu-title="Basic Excel Formulas 2"}
+
+::: columns
+::: {.column width="33.33%"}
+##### =IF()
+Returnează o valoarea dacă rezultatul e adevărat, alta dacă e fals.
+:::
+
+::: {.column width="33.33%"}
+##### =COUNTIF()
+Numără celulele care îndeplinesc o anumită condiție.
+:::
+
+::: {.column width="33.33%"}
+##### =SUMIF()
+Sumează toate celulele care îndeplinesc o anumită condiție.
+:::
+
+::: {.column width="33.33%"}
+##### =CONCATENATE()
+Combină mai multe fragmente de text.
+Pentru operația inversă, utilizați funcția =SPLIT().
+:::
+
+::: {.column width="33.33%"}
+##### =VLOOKUP()
+Asociază valorile dintr-o celulă cu rândul corespunzător dintr-un alt set de date.
+:::
+
+::: {.column width="33.33%"}
+##### =XLOOKUP()
+Similar cu funcția =XLOOKUP(), dar mai flexibil și mai ușor de înțeles.
+:::
+:::
+
+
+# Pauză
+
+
+# Instrumente AI
+
+Inteligența Artificială (AI) poate automatiza anumite procese în jurnalism și analiza de date.
+
+AI-ul însă poate [halucina](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)), și trebuie utilizat responsabil.
+
+## Tipuri de instrumente AI
+
+::: columns
+::: {.column width="33.33%"}
+:::  {.fragment}
+##### Skills
+Agenții AI pot căpăta abilități (skills) noi pentru sarcini specifice. Acestea pot fi instalate din surse externe sau create de tine.
+:::
+:::
+
+::: {.column width="33.33%"}
+:::  {.fragment}
+##### MCP / Plugin-uri
+MCP (Model Context Protocol) este un sistem de plugin-uri standardizat pentru agenții AI. Și acestea pot fi instalate din surse externe.
+:::
+:::
+
+::: {.column width="33.33%"}
+:::  {.fragment}
+##### Agenți dedicați
+Pentru anumite sarcini, există agenți specializați care pot fi folosiți direct, fără a fi nevoie de conigurare sau instalarea slills-urilor sau plugin-urilor.
+:::
+:::
+:::
+
+## Skills
+
+"[Agent Skills](https://agentskills.io/home)" este un standard pentru a extinde abilitățile agenților AI. Pentru jurnalism, abilitățile pot include instrumente de lucru cu PDF-uri sau documente Excel, crearea graficelor, sau accesarea anumitor baze de date.
+
+Skill-urile pot fi create ad-hoc de către agenții AI sau manual de către jurnalist.
+
+## Skills: Exemple
+
+- [Journalism agent skills](https://github.com/jamditis/claude-skills-journalism)
+- [Spotlight](https://spotlight.buriedsignals.com/docs/#skills)
+- Creează propriile skill-uri
+
+::: notes
+Show Moldova investigation skills in an Obsidian vault (research Ion Onțu).
+:::
+
+## MCP / Plugin-uri
+
+[MCP (Model Context Protocol)](https://modelcontextprotocol.io/) este un standard pentru a crea instrumente pentru agenții AI.
+
+## MCP: Exemple
+
+- [OpenRegistry](https://openregistry.sophymarine.com/)
+- [Datawrapper MCP](https://github.com/palewire/datawrapper-mcp)
+- [mcptools](https://posit-dev.github.io/mcptools/) / [btw](https://posit-dev.github.io/btw/) pentru R
+
+::: notes
+Show how to use the Datawrapper MCP to reproduce the exercise earlier.
+:::
+
+## Agenți dedicați
+
+Pe lângă skill-uri și plugin-uri, jurnaliștii pot utiliza agenți AI creați pentru anumite sarcini specifice. Aceștia sunt de obicei creați de programatori și sunt integrate în alte soft-uri sau platforme.
+
+## Agenți dedicați: Exemple
+
+- [Gemini Notebook (NotebookLM)](https://notebook.google/) | [recomandări pentru jurnalism](https://generative-ai-newsroom.com/practical-recommendations-for-implementing-notebooklm-in-archival-research-5b73bdacdca8)
+- [ChatGPT în Excel și Google Sheets](https://chatgpt.com/apps/spreadsheets/) | [Claude în Excel](https://claude.com/claude-for-microsoft-365)
+- [Augmenta](https://globalwitness.org/en/campaigns/fossil-fuels/augmenta-new-tool-for-ai-classification-and-research/)
+
+::: notes
+Show Gemini Notebooks, maybe talk about Augmenta.
+:::
+
+
+# Vizualizarea datelor
+
+## De ce vizualizăm datele? {background-color="#EAE8E3"}
+
+Sintetizarea datelor nu este întotdeauna suficientă pentru a identifica tendințe.
+
+Vizualizarea acestora ne poate oferi informații pe care altfel le-am pierde.
+
+![](https://www.research.autodesk.com/app/uploads/2023/03/DinoSequential-1.gif)
+
+## {#alegeri-rusia data-menu-title="Grafic alegeri Rusia"}
+
+![](media/russia-elections.webp)
+
+
+
+<!-- https://bsky.app/profile/alexselbyb.bsky.social/post/3mvveppnqys2o -->
+
+
+
+## Ce putem vizualiza? {.smaller background-color="white"}
+
+Poziție ![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png){.absolute top=100 right=50 width="500" height="500"}
+
+::: {.fragment}
+Mărime
+
+&nbsp;&nbsp;&nbsp;&nbsp;Lățime ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Horizontal-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Înălțime ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Suprafață ![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+Culoare
+
+&nbsp;&nbsp;&nbsp;&nbsp;Umplutură ![](https://datavizproject.com/wp-content/uploads/types/Pictorial-Stacked-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Culoare ![](https://datavizproject.com/wp-content/uploads/types/Cluster-Analysis-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Transparență
+
+&nbsp;&nbsp;&nbsp;&nbsp;Model
+
+Formă ![](https://datavizproject.com/wp-content/uploads/types/Matrix-Diagram--600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+Locație ![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+
+## Ce tipuri de codificare vizuală puteți identifica în acest grafic? {background-color="#fff1e0"}
+
+![](media/ft/scatter-5.gif){.absolute height="500"}
+
+## Graficul de dispersie FT {background-color="#fff1e0"}
+
+::: {.fragment .fade-in-then-out}
+Grafic de dispersie ![](media/ft/scatter-1.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment .fade-in-then-out}
+Scară logaritmică ![](media/ft/scatter-2.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment .fade-in-then-out}
+Schimbă mărimile ![](media/ft/scatter-3.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment .fade-in-then-out}
+Colorează ![](media/ft/scatter-4.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment}
+Animează anii ![](media/ft/scatter-5.gif){.absolute top=100 right=20 height="450"}
+:::
+
+::: notes
+https://www.ft.com/content/e2eba288-ef83-11e6-930f-061b01e23655
+:::
+
+
+## Instrumente pentru grafice
+
+<iframe class="stretch" data-src="https://samizdata.co/training/toolbox#visualisation"></iframe>
+::: footer
+Sursă: [ddj.nicu.md](https://samizdata.co/training/toolbox#visualisation)
+:::
+
+## Tipuri de grafice
+
+- [FT Vocabulary](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)
+- [Data Viz Project](https://datavizproject.com/)
+- [Data to Viz](https://www.data-to-viz.com/)
+- [Data Visualisation Catalogue](https://datavizcatalogue.com/)
+
+
+## Bare/coloane { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical.png)
+:::
+
+::: {.column width="40%"}
+Dreptunghiuri orizontale sau verticale în care lungimile sunt proporționale cu valorile pe care le reprezintă.
+<br><br>
+Potrivit pentru a compara numere sau a arăta trend-uri.
+:::
+:::
+
+## Linii { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Line-Graph.png)
+:::
+
+::: {.column width="40%"}
+Arată numere pe o scară continuă. Similar cu un graficul de dispersie, doar că punctele sunt conectate.
+<br><br>
+Potrivit pentru a arăta trend-uri.
+:::
+:::
+
+
+## Grafic de suprafață { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart.png)
+:::
+
+::: {.column width="40%"}
+Asemănătoare graficelor cu linii, însă suprafață de sub linie este coloarată. Suprapuse, pot arăta trend-uri cumulative.
+<br><br>
+Potrivit pentru a arăta trend-uri.
+:::
+:::
+
+## Grafic de dispersie { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png)
+:::
+
+::: {.column width="40%"}
+Reprezintă grafic un set de date pe două dimensiuni continue, fiecare pe o axă diferită (X și Y).
+<br><br>
+Potrivit pentru a ilustra corelația dintre diferite serii de date.
+:::
+:::
+
+## Hartă { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png)
+:::
+
+::: {.column width="40%"}
+Funcționează doar cu date geografice (evident!).
+<br><br>
+Chiar și în cazul datelor geografice, alte tipuri de diagrame pot fi adesea o alegere mai bună.
+:::
+:::
+
+
+## Anatomia unui grafic {background-color="white"}
+
+![](https://c.files.bbci.co.uk/13899/production/_128352008_optimised-debt-ceiling-nc.png)
+
+::: footer
+Sursă: [BBC News](https://www.bbc.com/news/business-64322574)
+:::
+
+::: notes
+- Title
+- Subtitle / description
+- Series
+- Labels
+- Gridlines
+- x-axix
+- y-axis
+- Legend/key
+- Source
+:::
+
+## Alegerea culorilor {background-color="white"}
+
+![](https://kirby.datawrapper.de/media/pages/blog/which-color-scale-to-use-in-data-vis/e9a7ed8d71-1740123119/200801_colorscale-intro-f-1.png)
+
+::: notes
+Sequential: Colours (of the same hue) that go from light to dark or the other way around. Usually, darker means higher value.
+
+Diverging: Similar to sequential, but they have a light middle colour that turns darker on both ends of the scale. Useful when you have both positive and negative values.
+
+Categorical: For values that aren't on a numeric scale or don't have an intrinsic order. Useful when none of the colours are more important than others.
+:::
+
+::: footer
+Sursă: [Datawrapper](https://www.datawrapper.de/blog/which-color-scale-to-use-in-data-vis)
+:::
+
+## Reprezentarea genului
+
+<iframe class="stretch" data-src="https://www.datawrapper.de/blog/gendercolor"></iframe>
+
+::: footer
+Sursă: [Datawrapper](https://www.datawrapper.de/blog/gendercolor)
+:::
+
+## Instrumente
+
+<iframe class="stretch" data-src="https://samizdata.co/training/toolbox#colours"></iframe>
+::: footer
+Sursă: [SAMIZDATA](https://samizdata.co/training/toolbox#colours)
+:::
+
+
+## Font-uri {background-color="white"}
+
+<iframe class="stretch" data-src="https://blog.datawrapper.de/fonts-for-data-visualization/"></iframe>
+::: footer
+Sursă: [Datawrapper](https://blog.datawrapper.de/fonts-for-data-visualization/)
+:::
+
+## Grafice eronate: Daily Mail
+![](media/bad-charts/daily-fail-2.jpg)
+
+::: footer
+Sursă: [Daily Mail](https://www.dailymail.co.uk/news/article-8028565/EU-leaders-argue-early-hours-bruising-budget-talks.html)
+:::
+
+## Grafice eronate: The Sun
+![](media/bad-charts/the-s-n.webp)
+
+::: footer
+Sursă: The Sun
+:::
+
+## Grafice eronate: Reuters
+![](media/bad-charts/gun-deaths.webp){.absolute top=90 left=0 height="500"}
+
+::: fragment
+![](media/bad-charts/gun-deaths-2.webp){.absolute top=90 left=0 height="456"}
+:::
+
+::: footer
+Sursă: Reuters
+:::
+
+## Grafice eronate: CBS News
+![](media/bad-charts/cbsn.jpg)
+
+::: footer
+Sursă: CBS News
+:::
+
+## Grafice eronate: PAS
+![](media/bad-charts/pas.jpg)
+
+::: footer
+Sursă: [Natalia Gavriliță](https://www.facebook.com/NataliaGavrilitaPM/posts/pfbid02MDSpYWRMeEmQcNKjmchqHza77UTSQKwyGxt1Kbaa6JF4dCpitxiH8zXaARfesxMrl)
+:::
+
+## Grafice eronate: PAS
+![](media/bad-charts/pas-2.jpg)
+
+::: footer
+Sursă: [Natalia Gavriliță](https://www.facebook.com/photo.php?fbid=3736590023025196&set=pb.100063578236855.-2207520000&type=3)
+:::
+
+## Grafice eronate: PAS
+![](media/bad-charts/pas-3.jpg)
+
+::: footer
+Sursă: [Nicu Calcea](https://www.facebook.com/nicucalcea/posts/pfbid0dLHWpZrKvDac46zLt8vuYax4kUY1eJNVKfhhyf3is3pUSHZpg7VgV2sZNJYnmckml?__tn__=%2CO*F)
+:::
+
+## WTF Visualizations
+
+<iframe class="stretch" data-src="https://viz.wtf/"></iframe>
+::: footer
+Sursă: [WTF Visualizations](https://viz.wtf/)
+:::
+
+
+# Execițiu: Prenumele nou-născuților
 
 Care este cel mai popular prenume pentru bebelușii din Moldova?
 
-https://dataset.gov.md/ro/dataset?q=prenume+copii&sort=views_recent+desc
+1. Descărcați [rapoartele pentru 2023 și 2022](https://dataset.gov.md/ro/dataset?q=prenume+copii&sort=views_recent+desc).
+2. Folosiți [Tabula](http://tabula.ondata.it) pentru a extrage tabelele din PDF-uri.
+3. Încărcați tabelele în Google Sheets și curățați-le.
+4. Creați un grafic/tabel în Datawrapper.
 
-- [ ] Show how to do this with AI, maybe with the datawrapper MCP
-
-
-
-
-
-
-
+::: notes
+Show how to do this with AI, maybe with the datawrapper MCP
+:::
 
 
+# Execițiu de grup
 
+1. Creați grupuri de 4 persoane.
+2. Identificați un set de date relevant pentru Republica Moldova (Indiciu: verificați [site-ul BNS](https://statistica.gov.md/ro) și [dataset.gov.md](https://dataset.gov.md/dataset/)).
+3. Produceți un mic material jurnalistic cu 1-2 grafice.
 
-
+<!-- 
 ## Baby names
 
 1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1GatzEY5cl3JmdVOpJKsF9ME-SSHNNi8dVfqm54ZONYA/copy) and pick one tab to work in. Data from [the ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesinenglandandwalesfrom1996).
@@ -262,474 +891,6 @@ Some datasets (like the ONS one) come with a data dictionary.
 For Nicu: choose boys or girls based on if there are more women or men in the group
 :::
 
-
-##  {#basic-excel-formulas data-menu-title="Basic Excel Formulas"}
-
-::: columns
-::: {.column width="33.33%"}
-##### [=A1+A2]
-Returns one number added (+) or subtracting (*) another.
-:::
-
-::: {.column width="33.33%"}
-##### [=A1/B$1]
-Returns one number divided (/) or multiplied (*) by another.
-:::
-
-::: {.column width="33.33%"}
-##### [=SUM()]
-Returns the sum of a series of numbers and/or cells.
-:::
-
-::: {.column width="33.33%"}
-##### [=AVERAGE()]
-Returns the numerical average value in a dataset, ignoring text.
-:::
-
-::: {.column width="33.33%"}
-##### [=MEDIAN()]
-Returns the median value in a numeric dataset.
-:::
-
-::: {.column width="33.33%"}
-##### [=(NEW-OLD)/OLD]
-Shows percentage change.
-:::
-:::
-
-
-## Averages {.smaller}
-
-::: columns
-::: {.column width="50%"}
-![](media/mean-median.svg){height="600"}
-:::
-
-::: {.column width="50%"}
-### =MODE()
-
-Finds the most common value in a range.
-
-&nbsp;
-&nbsp;
-
-### =MEDIAN()
-
-Finds the value that's right in the middle of a dataset.
-
-&nbsp;
-&nbsp;
-
-### =AVERAGE()
-
-Sum all the values and divide by the number of records.
-
-:::
-:::
-
-
-## How did the Mail do it?
-
-::: columns
-::: {.column width="50%"}
-:::  {.fragment}
-##### 2018
-![](media/daily-mail-1.png)
-:::
-:::
-
-::: {.column width="50%"}
-:::  {.fragment}
-##### 2019
-![](media/daily-mail-2.png)
-:::
-:::
-:::
-
-
-## Assignments {.smaller}
-
-::: columns
-::: {.column width="50%"}
-##### Critique a data journalism project
-- A 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.
-- 500-word group reflection, with appropriate references.
-- A 200-word reflection on your own learning.
-
-**Deadline**: Friday, 13 December, 16:00
-**Marking**: 40% of your final mark
-:::
-
-::: {.column width="50%"}
-##### Data journalism portfolio
-- One news story (400 words).
-- One EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.
-- A 200 word reflective blog-post style log on you own learning journey.
-
-**Deadline**: Friday, 24 January, 16:00
-**Marking**: 60% of your final mark
-:::
-:::
-
-::: notes
-No plagiarism, careful with AI.
-:::
-
-
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
-
-
-# Week 2
-
-Introduction to **Data Journalism**<br>
-[https://ddj.nicu.md/city/](https://ddj.nicu.md/city/)
-
-## Sourcing data {.smaller}
-
-#### Open Data
-
-::: columns
-::: {.column width="50%"}
-- UK
-  - [ONS](https://www.ons.gov.uk/)
-  - [GOV.UK](https://www.gov.uk/search/research-and-statistics)
-  - [Nomis (labour stats)](https://www.nomisweb.co.uk/)
-  - [NHS Digital](https://digital.nhs.uk/search?sort=date&area=data&searchTab=data&contentSearch=false)
-  - [Covid dashboard](https://coronavirus.data.gov.uk/)
-
-:::
-
-::: {.column width="50%"}
-- Other nations
-  - [US gov](https://www.data.gov/)
-  - [Eurostat](https://ec.europa.eu/eurostat/web/main/home)
-- International
-  - [World Bank](https://data.worldbank.org/)
-  - [United Nations](http://data.un.org/)
-  - [OECD](https://data.oecd.org/)
-  - [Our World in Data](https://ourworldindata.org/)
-
-:::
-:::
-
-::: footer
-More sources: [ddj.nicu.md](https://ddj.nicu.md/sources/)
-:::
-
-
-## Plan ahead
-
-<iframe class="stretch" data-src="https://ddj.nicu.md/sources/calendar.html"></iframe>
-::: footer
-Source: [ddj.nicu.md](https://ddj.nicu.md/sources/calendar.html)
-:::
-
-## Closed data
-
-![](media/closed-data.png)
-
-## FOIs
-
-![](media/foi.png)
-
-::: notes
-WhatDoTheyKnow
-
-Be as specific as possible or you might get the “too much work” excuse, specify the format or you'll get a PDF
-
-Likelihood they'll refuse (they refused my locations of CCTV cameras locations on national security grounds)
-
-If you want to use FOIs, do it as soon as possible.
-:::
-
-## Scraping
-
-![](media/scraping.png)
-
-::: notes
-Scraping (week 9)
-
-pre-scraped data like Inside Airbnb
-
-Parsehub, browser extensions, R/Python/Node
-
-We'll maybe talk about AI? as well?
-:::
-
-
-## Census exercise
-
-1. Make a copy of [this spreadsheet](ttps://docs.google.com/spreadsheets/d/1wbCYpp-5-2nZCaTdMcnNWSYtsUabQ0MDG_l4FGrZDwg/copy) (here's [the original data](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021)).
-2. Before you do anything else, what are some questions you would like to answer?
-3. Free first row, filter the table to the region you're from (or London)
-4. Fill in the columns at the end
-5. What are some other potential stories that you can think of?
-
-::: notes
-1) Concatenate title =CONCATENATE(A2,", ",B2, " (", C2,")")
-2) Conditional formatting on success column
-:::
-
-##  {#basic-excel-formulas-1-recap data-menu-title="Basic Excel Formulas Recap"}
-
-::: columns
-::: {.column width="33.33%"}
-##### [=A1+A2]
-Returns one number added (+) or subtracting (*) another.
-:::
-
-::: {.column width="33.33%"}
-##### [=A1/B$1]
-Returns one number divided (/) or multiplied (*) by another.
-:::
-
-::: {.column width="33.33%"}
-##### [=SUM()]
-Returns the sum of a series of numbers and/or cells.
-:::
-
-::: {.column width="33.33%"}
-##### [=AVERAGE()]
-Returns the numerical average value in a dataset, ignoring text.
-:::
-
-::: {.column width="33.33%"}
-##### [=MEDIAN()]
-Returns the median value in a numeric dataset.
-:::
-
-::: {.column width="33.33%"}
-##### [=(NEW-OLD)/OLD]
-Shows percentage change.
-:::
-:::
-
-
-##  {#basic-excel-formulas-2 data-menu-title="Basic Excel Formulas 2"}
-
-::: columns
-::: {.column width="33.33%"}
-##### [=IF()]
-Returns one value if the result is true, another if it's false.
-:::
-
-::: {.column width="33.33%"}
-##### [=COUNTIF()]
-Count all the cells that match a condition.
-:::
-
-::: {.column width="33.33%"}
-##### [=SUMIF()]
-Sum all the cells that match a condition.
-:::
-
-::: {.column width="33.33%"}
-##### [=CONCATENATE()]
-Combine multiple bits of text together.
-Use =SPLIT() for the opposite.
-:::
-
-::: {.column width="33.33%"}
-##### [=VLOOKUP()]
-Match the values in a cell with the corresponding row in another dataset.
-:::
-
-::: {.column width="33.33%"}
-##### [=XLOOKUP()]
-Same as =XLOOKUP() but more flexible and easier to grasp.
-:::
-:::
-
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
-
-
-# Week 3
-
-Introduction to **Data Journalis**<br>
-<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-
-## Toolbox
-
-<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/"></iframe>
-::: footer
-Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/)
-:::
-
-
-## XLOOKUP
-
-``` scala
-=XLOOKUP(search_term, col_to_search, col_to_return)
-```
-
-![](media/xlookup.png)
-
-
-## XLOOKUP exercise
-
-1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1FwMl1kJGsIqKe0K0L0V-zIPh_uk9C3fqDka6A5G1CBY/copy).
-2. Fill in the empty columns with formulas we learned last time.
-
-
-## Pivot Tables {.smaller}
-
-Pivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.
-
-You can calculate averages, counts, max/min values or sums for numbers in a group.
-
-![](media/pivot-recipe.png)
-
-
-## Pivot table exercise
-
-1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1-Jk4Zo5pTgGwXIeBEgzxn00IBjrxlxbmuf-ICW-4Am8/copy).
-2. <iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-Bonus points: Grab a CSV from [police.uk](https://data.police.uk/data/) and do it yourself.
-
-
-## Averages {.smaller}
-
-::: columns
-::: {.column width="50%"}
-![](media/mean-median.svg){height="600"}
-:::
-
-::: {.column width="50%"}
-### =MODE()
-
-Finds the most common value in a range.
-
-&nbsp;
-&nbsp;
-
-### =MEDIAN()
-
-Finds the value that's right in the middle of a dataset.
-
-&nbsp;
-&nbsp;
-
-### =AVERAGE()
-
-Sum all the values and divide by the number of records.
-
-:::
-:::
-
-
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
-
-
-
-# Week 4
-
-Introduction to **Data Journalis**<br>
-<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-## Make your spreadsheets fact-checkable {.smaller}
-
-It's all about:
-
-::: columns
-::: {.column width="50%"}
-Documentation
-
-- keep the reference to the source data unaltered
-- if needed add a data dictionary or write down what you did
-- use sensible names for your columns (not "weight") and sheets (not "Sheet1")
-- one question = one sheet
-:::
-
-::: {.column width="50%"}
-Reproducibility
-
-- do analysis on a new sheet, never on the original data
-- use range or sheet protection
-- back up often
-:::
-:::
-
-::: notes
-https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit
-:::
-
-## Data prep
-
-<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets"></iframe>
-
-::: footer
-Source: [Datawrapper](https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets)
-:::
-
-## {#dirty-data data-menu-title="Dirty Data" .smaller}
-
-::: columns
-::: {.column width="33.33%"}
-##### Missing data
-Sometimes, records disappear or were never collected. It may not always be the obvious when that is the case.
-:::
-
-::: {.column width="33.33%"}
-##### Duplicated data
-Records can be repeated, either due to technical mishaps or due to repeated input.
-:::
-
-::: {.column width="33.33%"}
-##### Misspellings
-Humans make mistakes. Assume any dataset manually created by humans to have missspelings.
-:::
-
-::: {.column width="33.33%"}
-<br>
-
-##### Poor formatting
-Some spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.
-:::
-
-::: {.column width="33.33%"}
-<br>
-
-##### Parsing errors
-Wrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.
-:::
-
-::: {.column width="33.33%"}
-<br>
-
-##### Inconsistent data
-A column can have different unites, spell categories differently or record different methodologies.
-:::
-:::
-
-## The guide to bad data
-
-![](media/guide-bad-data.png)
-
-::: footer
-Source: [Quartz](https://github.com/Quartz/bad-data-guide)
-:::
-
-
-## {#inflation-screenshot data-menu-title="ONS inflation data" .smaller}
-
-![](media/inflation-ons-screenshot.png)
-
-::: footer
-Source: [ONS](https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation)
-:::
-
-
 ## Baby names exercise
 
 1. Download the file with baby names in England and Wales for [girls](https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsboys/2021/2021boysnamesupdated1.xlsx) or [boys](https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsgirls/2021/2021girlsnames.xlsx).
@@ -742,419 +903,8 @@ https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/liv
 :::
 
 
-## OpenRefine
 
-![](media/open-refine-guardian.png)
 
-::: footer
-Source: [The Guardian](https://www.theguardian.com/politics/2021/oct/25/tories-received-13m-from-fossil-fuel-interests-and-climate-sceptics-since-2019)
-:::
-
-## Download OpenRefine
-
-<iframe class="stretch" data-src="https://openrefine.org/"></iframe>
-
-::: footer
-Source: [OpenRefine](https://openrefine.org/)
-:::
-
-::: notes
-https://search.electoralcommission.org.uk/
-:::
-
-## Food hygiene data
-
-<iframe class="stretch" data-src="https://ratings.food.gov.uk/open-data"></iframe>
-
-::: footer
-Source: [Food Standards Agency](https://ratings.food.gov.uk/open-data)
-:::
-
-## Food hygiene exercise {.smaller}
-
-- Make a copy of the [food hygiene ratings data](https://docs.google.com/spreadsheets/d/1eNZZlAL3pYEd31Ge56qdkc3tko42fAGvEv8VARdwCr8/copy).
-- Answer these questions:
-    1. What kind of establishments are the best rated in Islington?
-    2. What establishment with a rating of 0-1 is due a follow-up visit?
-    3. How many establishments received a 5-star rating this month?
-    4. What is the cleanest hotspots (highest average hygiene with 10+ ratings)?
-    5. Any other interesting angles?
-
-::: notes
-N7 6NJ. Use Google Sheets filter instead of pivot for 10+ ratings
-:::
-
-## Group assignment {.smaller}
-
-You will be split into teams of (tbd) to create a narrated PowerPoint presentation critiquing a data project featured in the [Sigma Awards](https://sigmaawards.org/). You can choose a winner or a [short-listed project](https://github.com/Sigma-Awards/shortlist-2024/blob/main/The%20Sigma%20Awards%202024-Shortlist.csv).
-
-&nbsp;
-&nbsp;
-
-Deadline: **Friday, 13 December, 16:00**
-
-&nbsp;
-&nbsp;
-
-Deliverables
-
-- A 20-25 minute long [narrated PowerPoint presentation](https://support.microsoft.com/en-us/office/record-audio-narration-for-your-powerpoint-presentation-232d5fec-fc90-4abb-9332-c469d336d947).
-- A 500-word group reflection, with appropriate references (Harvard and I suggest using Zotero as citation manager).
-- Fill in [this spreadsheet](https://docs.google.com/spreadsheets/d/1sqBUIQ1defxAQ-uGQAdFW6SUztwWCk_676Ynuj0HG80/edit?usp=sharing) with your name and the project you're working on.
-
-
-
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
-
-
-
-
-
-
-# Week 5
-
-**Data Stories**<br>
-<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-
-## Why do we visualise data? {background-color="#e9e9e9"}
-
-Summarising data, like we did in previous lessons, is not always enough to reveal pattern or trends.
-
-Visualising it can provide insight we'd otherwise lose out on.
-
-![](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif){.absolute width="700"}
-
-
-## What can we visualise? {.smaller background-color="white"}
-
-Position ![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png){.absolute top=100 right=50 width="500" height="500"}
-
-::: {.fragment}
-Size
-
-&nbsp;&nbsp;&nbsp;&nbsp;Width ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Horizontal-600x600.png){.absolute top=100 right=50 width="500" height="500"}
-:::
-
-::: {.fragment}
-&nbsp;&nbsp;&nbsp;&nbsp;Height ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical-600x600.png){.absolute top=100 right=50 width="500" height="500"}
-:::
-
-::: {.fragment}
-&nbsp;&nbsp;&nbsp;&nbsp;Area ![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
-:::
-
-::: {.fragment}
-Colour
-
-&nbsp;&nbsp;&nbsp;&nbsp;Fill ![](https://datavizproject.com/wp-content/uploads/types/Pictorial-Stacked-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
-:::
-
-::: {.fragment}
-&nbsp;&nbsp;&nbsp;&nbsp;Colour ![](https://datavizproject.com/wp-content/uploads/types/Cluster-Analysis-600x600.png){.absolute top=100 right=50 width="500" height="500"}
-:::
-
-::: {.fragment}
-&nbsp;&nbsp;&nbsp;&nbsp;Opacity
-
-&nbsp;&nbsp;&nbsp;&nbsp;Pattern
-
-Shape ![](https://datavizproject.com/wp-content/uploads/types/Matrix-Diagram--600x600.png){.absolute top=100 right=50 width="500" height="500"}
-:::
-
-::: {.fragment}
-Location ![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map-600x600.png){.absolute top=100 right=50 width="500" height="500"}
-:::
-
-## People suck at sizes {background-color="white"}
-<iframe width="100%" height="600" frameborder="0" src="https://observablehq.com/embed/@mizinov/area-comparison?cell=*"></iframe>
-
-
-## What visual encoding can you find in this chart? {background-color="#fff1e0"}
-
-![](media/ft/scatter-5.gif){.absolute height="500"}
-
-## The FT's scatter plot {background-color="#fff1e0"}
-
-::: {.fragment .fade-in-then-out}
-Standard scatter plot ![](media/ft/scatter-1.avif){.absolute top=100 right=20 height="450"}
-:::
-
-::: {.fragment .fade-in-then-out}
-Change scale to log ![](media/ft/scatter-2.avif){.absolute top=100 right=20 height="450"}
-:::
-
-::: {.fragment .fade-in-then-out}
-Size by population ![](media/ft/scatter-3.avif){.absolute top=100 right=20 height="450"}
-:::
-
-::: {.fragment .fade-in-then-out}
-Colour by continent ![](media/ft/scatter-4.avif){.absolute top=100 right=20 height="450"}
-:::
-
-::: {.fragment}
-Animate over time ![](media/ft/scatter-5.gif){.absolute top=100 right=20 height="450"}
-:::
-
-::: notes
-https://www.ft.com/content/e2eba288-ef83-11e6-930f-061b01e23655
-:::
-
-## FT Vocabulary {background-color="#ffffff"}
-
-![](https://raw.githubusercontent.com/Financial-Times/chart-doctor/main/visual-vocabulary/poster.png){.absolute top=0 left=0 height="800"}
-
-::: footer
-Source: [FT](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)
-:::
-
-## Many types of charts
-
-- [FT Vocabulary](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)
-- [Data Viz Project](https://datavizproject.com/)
-- [Data to Viz](https://www.data-to-viz.com/)
-- [Data Visualisation Catalogue](https://datavizcatalogue.com/)
-
-## Gapminder
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/hVimVzgtD6w' frameborder='0' allowfullscreen></iframe></div>
-
-## Gapminder exercise {.smaller}
-
-1. Download the "Life expectancy" and "Fertiliy rate" (and "Population" if you want) datasets from [Gapminder](https://www.gapminder.org/data/).
-2. Use `XLOOKUP` to join the datasets.
-3. Reproduce Hans Rosling's chart in Google Sheets.
-
-## Gapminder exercise
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.gapminder.org/tools/' frameborder='0' allowfullscreen></iframe></div>
-
-
-## Police crime exercise
-
-1. Download the [Police recorded crime open data Police Force Area tables, year ending March 2013 onwards](https://www.gov.uk/government/statistics/police-recorded-crime-open-data-tables) table.
-2. Working in groups of two, think of stories to tell based on this data.
-3. Write a couple headlines based on your analysis.
-4. Choose a headline and make a chart.
-
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
-
-::: notes
-Please make Flourish and Datawrapper accounts
-:::
-
-
-# Week 6
-
-Data [Visualisation]<br>
-<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-## Dataviz Toolbox
-
-<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#visualisation"></iframe>
-::: footer
-Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/#visualisation)
-:::
-
-
-## Bar/column charts { background-color="white"}
-
-::: columns
-::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical.png)
-:::
-
-::: {.column width="40%"}
-Horizontal or vertical rectangles with lengths proportional to the values that they represent.
-<br><br>
-Good for comparing across different values or showing a trend over time.
-:::
-:::
-
-## Line chart { background-color="white"}
-
-::: columns
-::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Line-Graph.png)
-:::
-
-::: {.column width="40%"}
-Shows values on a continuous scale. Similar to a scatter plot, except all dots are connected.
-<br><br>
-Good for showing trends over time.
-:::
-:::
-
-
-## Area chart { background-color="white"}
-
-::: columns
-::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart.png)
-:::
-
-::: {.column width="40%"}
-Similar to a line chart but the area underneath the line is coloured in. When stacked, it can show multiple data series as well as their cumulative trend.
-<br><br>
-Good for showing trends over time.
-:::
-:::
-
-## Scatter plot { background-color="white"}
-
-::: columns
-::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png)
-:::
-
-::: {.column width="40%"}
-Plots a dataset across two continuous dimensions, each on a different axis (X and Y).
-<br><br>
-Good for showing correlation between different data series.
-:::
-:::
-
-## Map { background-color="white"}
-
-::: columns
-::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png)
-:::
-
-::: {.column width="40%"}
-Only works with geographical data (duh!).
-<br><br>
-Even with geographical data, other charts can often be a better choice.
-:::
-:::
-
-
-## Anatomy of a chart {background-color="white"}
-
-![](https://c.files.bbci.co.uk/13899/production/_128352008_optimised-debt-ceiling-nc.png)
-
-::: notes
-- Title
-- Subtitle / description
-- Series
-- Labels
-- Gridlines
-- x-axix
-- y-axis
-- Legend/key
-- Source
-:::
-
-## Colour scales {background-color="white"}
-
-![](https://blog.datawrapper.de/wp-content/uploads/2021/03/200801_colorscale-intro-f-1.png)
-
-::: notes
-Sequential: Colours (of the same hue) that go from light to dark or the other way around. Usually, darker means higher value.
-
-Diverging: Similar to sequential, but they have a light middle colour that turns darker on both ends of the scale. Useful when you have both positive and negative values.
-
-Categorical: For values that aren't on a numeric scale or don't have an intrinsic order. Useful when none of the colours are more important than others.
-:::
-
-
-## Colour Toolbox
-
-<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#colours"></iframe>
-::: footer
-Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/#colours)
-:::
-
-
-## Dataviz Fonts {background-color="white"}
-
-<iframe class="stretch" data-src="https://blog.datawrapper.de/fonts-for-data-visualization/"></iframe>
-::: footer
-Source: [Datawrapper](https://blog.datawrapper.de/fonts-for-data-visualization/)
-:::
-
-## Bad charts: Daily Mail
-![](media/bad-charts/daily-fail-2.jpg)
-
-::: footer
-Source: [Daily Mail](https://www.dailymail.co.uk/news/article-8028565/EU-leaders-argue-early-hours-bruising-budget-talks.html)
-:::
-
-## Bad charts: The Sun
-![](media/bad-charts/the-s-n.webp)
-
-::: footer
-Source: The Sun
-:::
-
-## Bad charts: Reuters
-![](media/bad-charts/gun-deaths.webp){.absolute top=90 left=0 height="500"}
-
-::: fragment
-![](media/bad-charts/gun-deaths-2.webp){.absolute top=90 left=0 height="456"}
-:::
-
-::: footer
-Source: Reuters
-:::
-
-## Bad charts: CBS News
-![](media/bad-charts/cbsn.jpg)
-
-::: footer
-Source: CBS News
-:::
-
-## WTF Visualizations
-
-<iframe class="stretch" data-src="https://viz.wtf/"></iframe>
-::: footer
-Source: [WTF Visualizations](https://viz.wtf/)
-:::
-
-## Cities exercise
-
-1. Create a new chart in Datawrapper.
-2. Select the **Rural and urban dataset**.
-3. Make a **stacked bar chart**.
-
-
-## Gapminder exercise
-
-1. Download the [Gapminder data](https://github.com/kirenz/datasets/blob/master/gapminder.csv).
-2. Copy the data into Datawrapper.
-3. Create a scatter plot.
-4. Customise axis labels, colours, size, tooltips, title, description and source.
-5. Add annotations.
-6. Publish or download the chart.
-
-## Flourish example (on your own) {background-color="white"}
-
-1. Copy [this spreadsheet](https://docs.google.com/spreadsheets/d/1wf3qDM9Ew8lDeDpTHNz22S83ri8rDspnRycDG9m657Q/copy).
-2. Copy the data into Flourish.
-3. Create a bar chart race.
-4. Customise axis labels, colours, size, title, description and source.
-5. Add annotations (optionally).
-6. Publish or download the chart.
-
-## Flourish example (on your own)
-
-<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/11775147"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-::: footer
-Source: [Reddit](https://www.reddit.com/r/dataisbeautiful/comments/d9mirb/oc_how_uber_took_over_new_york_city/)
-:::
-
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
-
-# Week 7
 
 **Maps**<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
@@ -1198,120 +948,10 @@ Hex maps standardise administrative units into same-sizes hexagons, squares or t
 :::
 
 
-## The 2019 general election {background-color="white"}
-
-![](https://geographical.co.uk/wp-content/uploads/UK-general-election-2019.jpeg)
-
-
-## Not always the right choice
-
-::: columns
-::: {.column width="50%"}
-![](https://imgs.xkcd.com/comics/heatmap_2x.png)
-:::
-
-::: {.column width="50%"}
-Try to only use maps when there's a geographical pattern to your data.
-<br><br>
-Don't make a map if it's going to basically be a population map.
-:::
-:::
-
-::: footer
-Source: [xkcd](https://xkcd.com/1138/)
-:::
-
-## What data you'll need {.smaller background-color="#f9f9f9"}
-
-::: columns
-::: {.column width="50%"}
-![](media/geo-data-1.png)
-
-#### Geographical data
-
-This can be polygons (areas), lines or points. Some tools have a few options by default, or you can get additional ones from the ONS, Natural Earth or ArcGIS.
-
-:::
-
-::: {.column width="50%"}
-![](media/geo-data-2.png)
-
-#### Numerical or categorical data
-
-This is the data that will be placed in the shapes on your map. Normally contains region IDs or coordinates (latitude and longitude).
-
-:::
-:::
-
-## Internet speed exercise
-
-1. Make a copy of the [internet speed in Europe data](https://docs.google.com/spreadsheets/d/1jHngN4MzHA8r_Nq_3fdkqpWGhNi7Cs2I_PwBShiPLXM/copy).
-2. Create a choropleth map (NUTS3, 2021).
-3. Copy the data in.
-4. Customise colours, title, description and source.
-5. Add annotations.
-6. Publish or download the chart.
-
-## Internet speed - example {.smaller background-color="#1c1b22"}
-
-<iframe class="stretch" data-src="https://datawrapper.dwcdn.net/uJ92E/"></iframe>
-
-## UK elections exercise
-
-1. Donwload [this CSV](https://datawrapper.dwcdn.net/p8NRs/9/dataset.csv).
-2. Create a symbol map in Datawrapper (UK constituencies, 2023).
-3. Copy the data in.
-4. Customise colours, title, description and source.
-5. Publish or download the chart.
-
-## Missing migrants exercise (Flourish)
-
-1. Go to the missing migrants tab in the spreadsheet you've copied earlier.
-2. Copy the data into Datawrapper or Flourish.
-3. Create a symbol map.
-4. Customise it (colour, size, opacity, etc).
-
-## Missing migrants - example
-
-<div class="flourish-embed flourish-map" data-src="visualisation/6268496"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
 
 
-
-# Week 8
-
-Data **Projects**<br>
-<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-
-## {.smaller}
-
-::: columns
-::: {.column width="33.33%"}
-![](media/projects-1.png){width="100%"}
-
-Often, the best narratives warrant going further than simple graphics.
-:::
-
-::: {.column width="33.33%"}
-![](media/projects-2.png){width="100%"}
-
-Tailored visualisations designed specifically for a story will almost always be the best way to tell a story.
-:::
-
-::: {.column width="33.33%"}
-![](media/projects-3.png){width="100%"}
-
-Interactivity can sometimes help portray the intricacies of a story better.
-:::
-:::
-
-## The Martini Glass principle {background-color="#f2f2f2"}
+## The Martini Glass principle {background-color="#EAE8E3"}
 
 ![](https://miro.medium.com/v2/1*Jca05UCRvx-iJ96zGIFQkw.jpeg){width="100%"}
 
@@ -1330,13 +970,13 @@ Let your readers explore the data on their own to find the stories that are rele
 ## {fullscreen=true}
 <iframe class="stretch" data-src="https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html"></iframe>
 ::: footer
-Source: [Gurman Bhatia](https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html)
+Sursă: [Gurman Bhatia](https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html)
 :::
 
 ## {fullscreen=true}
 <iframe class="stretch" data-src="https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/"></iframe>
 ::: footer
-Source: [Masters of Media](https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/)
+Sursă: [Masters of Media](https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/)
 :::
 
 
@@ -1355,7 +995,7 @@ Examples include [FiveThirtyEight's Biden approval rating tracker](https://proje
 :::
 
 ::: footer
-Source: [New Statesman](https://www.newstatesman.com/science-tech/2021/12/uk-covid-tracker-latest-data-local-authority)
+Sursă: [New Statesman](https://www.newstatesman.com/science-tech/2021/12/uk-covid-tracker-latest-data-local-authority)
 :::
 
 
@@ -1374,11 +1014,11 @@ Examples include the [FT personal data worth calculator](https://ig.ft.com/how-m
 :::
 
 ::: footer
-Source: [BBC News](https://www.bbc.co.uk/news/business-67489975)
+Sursă: [BBC News](https://www.bbc.co.uk/news/business-67489975)
 :::
 
 
-## Scrollable stories {fullscreen=true .smaller background-color="#222222"}
+## Scrollable stories {fullscreen=true .smaller background-color="#111311"}
 
 ::: columns
 ::: {.column width="66.66%"}
@@ -1393,7 +1033,7 @@ Examples include [The Impatient List](https://xujunjiejack.github.io/), [the New
 :::
 
 ::: footer
-Source: BBC News
+Sursă: BBC News
 :::
 
 
@@ -1415,152 +1055,6 @@ Source: BBC News
 - [Reporting with numbers](https://www.reportingwithnumbers.com/)
 - [Rate my visualization](https://stephanieevergreen.com/rate-your-visualization/)
 
-## Let's hear from you
 
 
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
-
-
-
-
-# Week 9
-
-**Scraping**<br>
-<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-
-##
-
-> Data scraping, in its most general form, refers to a technique in which a computer program extracts data from output generated from another program. --- **[Cloudflare](https://www.cloudflare.com/en-gb/learning/bots/what-is-data-scraping/)**
-
-## Data can be stuck behind inaccessible formats {.smaller}
-
-::: columns
-::: {.column width="33.33%"}
-### PDFs
-
-Many organisations still publish data in PDFs, a proprietary format that is difficult to work with. Sometimes, they even do it on purpose.
-:::
-
-::: {.column width="33.33%"}
-### Images
-
-If you can't find the data behind a chart, ask the author. If you can't do that either, read it from the image.
-:::
-
-::: {.column width="33.33%"}
-### Websites
-
-If you've got structured information on your page, you'll most likely be able to download in a format that you can analyse.
-:::
-:::
-
-
-## Use Tabula to scrape PDF tables {fullscreen=true}
-<iframe class="stretch" data-src="https://tabula.technology/"></iframe>
-::: footer
-Source: [Tabula](https://tabula.technology/)
-:::
-
-::: notes
-Show an example.
-https://oms-www.files.svdcdn.com/production/downloads/academic/The_Future_of_Employment.pdf
-:::
-
-
-
-## Digitise image charts {fullscreen=true}
-<iframe class="stretch" data-src="https://apps.automeris.io/wpd/"></iframe>
-::: footer
-Source: [WebPlotDigitizer](https://apps.automeris.io/wpd/)
-:::
-
-::: notes
-Screenshot and digitize: https://www.ft.com/content/7e32dfb1-2282-40fa-9b10-181c01272ba3
-:::
-
-## Digitise maps {fullscreen=true}
-<iframe class="stretch" data-src="https://mapster.me/map-digitizer/"></iframe>
-::: footer
-Source: [Map Digitizer](https://mapster.me/map-digitizer/)
-:::
-
-::: notes
-Digitize: https://www.bbc.co.uk/bitesize/guides/zgrh7yc/revision/4
-:::
-
-## Scrape online charts {fullscreen=true}
-<iframe class="stretch" data-src="https://onlinejournalismblog.com/2017/05/10/how-to-find-data-behind-chart-map-using-inspector/"></iframe>
-::: footer
-Source: [Online Journalism Blog](https://onlinejournalismblog.com/2017/05/10/how-to-find-data-behind-chart-map-using-inspector/)
-:::
-
-## Hidden APIs {fullscreen=true}
-<iframe class="stretch" data-src="https://inspectelement.org/"></iframe>
-::: footer
-Source: [Inspect Element](https://inspectelement.org/)
-:::
-
-
-## Import HTML tables into Sheets
-
-1. Create a new Google Sheets document.
-2. Open [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_countries_by_wealth_per_adult) in another tab.
-3. Use the `=IMPORTHTML()` formula to import one of the tables.
-
-## Missing persons exercise
-
-1. Download and install the [Web Scraper](https://webscraper.io/) browser extension.
-2. Navigate to the [Missing Persons website](https://missingpersons.police.uk/en-gb/case-search).
-3. Scrape it.
-
-```{.json .code-overflow-wrap}
-{"_id":"missingpersons","startUrl":["https://missingpersons.police.uk/en-gb/case-search/?page=[1-10]&orderBy=dateDesc"],"selectors":[{"id":"gender-age","parentSelectors":["case"],"type":"SelectorText","selector":"a:nth-of-type(7) div:nth-of-type(1) div","multiple":false,"regex":""},{"id":"reference","parentSelectors":["case"],"type":"SelectorText","selector":"div.Detail:nth-of-type(2) div","multiple":false,"regex":""},{"id":"location","parentSelectors":["case"],"type":"SelectorText","selector":"div.Detail:nth-of-type(3) div","multiple":false,"regex":""},{"id":"case","parentSelectors":["_root"],"type":"SelectorElement","selector":"a.CaseThumbnail","multiple":true},{"id":"link","parentSelectors":["case"],"type":"SelectorLink","selector":"_parent_","multiple":false},{"id":"ethnicity","parentSelectors":["link"],"type":"SelectorText","selector":"div.Entry:nth-of-type(3) div.Value","multiple":false,"regex":""}]}
-```
-
-
-## Petitions exercise
-
-1. Go to the [UK petitions website](https://petition.parliament.uk/archived/petitions?state=published).
-2. Scrape the name of the petition, text, number of signatures, etc.
-
-
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
-
-
-# Week 10
-
-**Recap**<br>
-<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-## Think of a story idea
-
-At COP29, after delayed negations, advanced economies pledged to provide $300bn a year to low and middle income countries by 2035.
-
-Climate vulnerable countries said this isn't enough, and the number should be closer to $1.3tn.
-
-Can we contextualise how much $300bn is?
-
-## Find data
-
-The OECD tracks how much climate financing developing countries [have mobilised so far](https://www.oecd.org/en/publications/climate-finance-provided-and-mobilised-by-developed-countries-in-2013-2022_19150727-en/full-report/component-2.html).
-
-In partnership with the IISD, they also track how much countries spend on [fossil fuel subsidies](https://fossilfuelsubsidytracker.org/).
-
-Download both datasets and put them in a new Google Sheet.
-
-We'll also need a [list of "developed countries"](https://www.oecd-ilibrary.org/sites/f0773d55-en/1/4/3/index.html?itemId=/content/publication/f0773d55-en&_csp_=5026909c969925715cde6ea16f4854ee&itemIGO=oecd&itemContentType=book#tablegrp-d1e4673).
-
-## Clean and transform the data
-
-We need to pivot and filter both tables. There's some additional cleaning we need to do as well, for example, making sure the units are consistent between the two datasets.
-
-## Visualise
-
-Copy the data into Datawrapper and visualise it as a grouped bar chart.
+-->
