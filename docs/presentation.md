@@ -83,7 +83,7 @@ Am absolvit și predat la **City, University of London**, și am făcut jurnalis
 - 13:30 — Instrumente AI
 - 14:15 — Vizualizarea datelor
 - 15:00 — Exercițiu: Prenumele nou-născuților
-- 15:30 — Exercițiu de grup: redactarea unui scurt articol pe baza datelor reale
+- 15:30 — Exercițiu de grup
 - 16:30 — Întrebări și răspunsuri, resurse suplimentare, discuții
 
 <!-- - 10:00–10:15 — Introduceri și obiective
@@ -246,7 +246,7 @@ Sursă: [Paul Bradshaw](https://twitter.com/paulbradshaw/status/1445015559742050
 
 <iframe class="stretch" data-src="https://samizdata.co/"></iframe>
 ::: footer
-Soursă: [SAMIZDATA](https://samizdata.co/)
+Sursă: [SAMIZDATA](https://samizdata.co/)
 :::
 
 
@@ -371,7 +371,7 @@ Oamenii fac greșeli. Presupuneți că orice set de date creat manual de oameni 
 <br>
 
 ##### Formatare necorespunzătoare
-Unele foi de calcul sunt concepute pentru a fi citite de oameni, nu de calculatoare. Prin urmare, trebuie să învățăm programele să le citească corect.
+Unele foi de calcul sunt concepute pentru a fi citite de oameni, nu de calculatoare. Prin urmare, trebuie procesate suplimentar.
 :::
 
 ::: {.column width="33.33%"}
@@ -507,7 +507,7 @@ MCP (Model Context Protocol) este un sistem de plugin-uri standardizat pentru ag
 ::: {.column width="33.33%"}
 :::  {.fragment}
 ##### Agenți dedicați
-Pentru anumite sarcini, există agenți specializați care pot fi folosiți direct, fără a fi nevoie de conigurare sau instalarea slills-urilor sau plugin-urilor.
+Pentru anumite sarcini, există agenți specializați care pot fi folosiți direct, fără a fi nevoie de configurare sau instalarea skill-urilor sau plugin-urilor.
 :::
 :::
 :::
@@ -653,7 +653,7 @@ https://www.ft.com/content/e2eba288-ef83-11e6-930f-061b01e23655
 
 <iframe class="stretch" data-src="https://samizdata.co/training/toolbox#visualisation"></iframe>
 ::: footer
-Sursă: [ddj.nicu.md](https://samizdata.co/training/toolbox#visualisation)
+Sursă: [SAMIZDATA](https://samizdata.co/training/toolbox#visualisation)
 :::
 
 ## Tipuri de grafice
@@ -686,7 +686,7 @@ Potrivit pentru a compara numere sau a arăta trend-uri.
 :::
 
 ::: {.column width="40%"}
-Arată numere pe o scară continuă. Similar cu un graficul de dispersie, doar că punctele sunt conectate.
+Arată numere pe o scară continuă. Similar cu graficul de dispersie, doar că punctele sunt conectate.
 <br><br>
 Potrivit pentru a arăta trend-uri.
 :::
@@ -701,7 +701,7 @@ Potrivit pentru a arăta trend-uri.
 :::
 
 ::: {.column width="40%"}
-Asemănătoare graficelor cu linii, însă suprafață de sub linie este coloarată. Suprapuse, pot arăta trend-uri cumulative.
+Asemănătoare graficelor cu linii, însă suprafață de sub linie este colorată. Suprapuse, pot arăta trend-uri cumulative.
 <br><br>
 Potrivit pentru a arăta trend-uri.
 :::
@@ -856,7 +856,7 @@ Sursă: [WTF Visualizations](https://viz.wtf/)
 :::
 
 
-# Execițiu: Prenumele nou-născuților
+# Exercițiu: Prenumele nou-născuților
 
 Care este cel mai popular prenume pentru bebelușii din Moldova?
 
@@ -870,11 +870,65 @@ Show how to do this with AI, maybe with the datawrapper MCP
 :::
 
 
-# Execițiu de grup
+# Exercițiu de grup
 
 1. Creați grupuri de 4 persoane.
-2. Identificați un set de date relevant pentru Republica Moldova (Indiciu: verificați [site-ul BNS](https://statistica.gov.md/ro) și [dataset.gov.md](https://dataset.gov.md/dataset/)).
+2. Identificați un set de date relevant pentru Republica Moldova (indiciu: verificați [site-ul BNS](https://statistica.gov.md/ro) și [dataset.gov.md](https://dataset.gov.md/dataset/)).
 3. Produceți un mic material jurnalistic cu 1-2 grafice.
+
+```{=html}
+<div style="text-align:center;margin-top:0.8em;">
+  <div id="timer-display" style="font-size:2.5em;font-weight:bold;font-variant-numeric:tabular-nums;">45:00</div>
+  <button id="timer-start" style="font-size:0.6em;margin:0.2em;padding:0.3em 1em;cursor:pointer;">Start</button>
+  <button id="timer-pause" style="font-size:0.6em;margin:0.2em;padding:0.3em 1em;cursor:pointer;">Pauză</button>
+  <button id="timer-reset" style="font-size:0.6em;margin:0.2em;padding:0.3em 1em;cursor:pointer;">Reset</button>
+</div>
+<script>
+(function() {
+  const total = 45 * 60;
+  let remaining = total;
+  let timer = null;
+  const el = document.getElementById('timer-display');
+  function fmt(s) { const m = Math.floor(s / 60); const sec = s % 60; return String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0'); }
+  function render() { el.textContent = remaining <= 0 ? 'Timp expirat!' : fmt(remaining); el.style.color = (remaining <= 60 && remaining > 0) ? '#c00' : ''; }
+  function tick() { if (remaining > 0) { remaining--; render(); if (remaining === 0) { clearInterval(timer); timer = null; } } }
+  document.getElementById('timer-start').onclick = () => { if (!timer && remaining > 0) timer = setInterval(tick, 1000); };
+  document.getElementById('timer-pause').onclick = () => { clearInterval(timer); timer = null; };
+  document.getElementById('timer-reset').onclick = () => { clearInterval(timer); timer = null; remaining = total; render(); };
+  render();
+})();
+</script>
+```
+
+
+# [👋]{.wave} Vă mulțumesc pentru atenție
+
+```{=html}
+<style>
+  .wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+</style>
+```
+
+- [nicu.md](https://nicu.md/)
+- [SAMIZDATA](https://samizdata.co/ro)
+- [mail@nicu.md](mailto:mail@nicu.md)
 
 <!-- 
 ## Baby names
