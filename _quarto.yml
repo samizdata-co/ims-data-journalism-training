@@ -1,6 +1,8 @@
 project:
   output-dir: output
   execute-dir: project
+  post-render:
+    - ./post-render.sh
 
 brand: _brand.yml
 
