@@ -26,6 +26,11 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Render presentation
         run: quarto render docs/presentation.md
+      - name: Include presentation logo
+        run: |
+          mkdir -p output/docs/assets/logos
+          cp assets/logos/mark.svg output/docs/assets/logos/mark.svg
+          sed -i 's|src="/../assets/logos/mark.svg"|src="assets/logos/mark.svg"|g' output/docs/presentation.html
       - name: Add presentation landing page
         run: printf '<!doctype html><meta http-equiv="refresh" content="0; url=presentation.html"><a href="presentation.html">Open presentation</a>\n' > output/docs/index.html
       - uses: actions/upload-pages-artifact@v3
