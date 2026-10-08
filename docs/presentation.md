@@ -42,8 +42,13 @@ filters:
 </style>
 ```
 
+<!-- 
+- [ ] Add QR code 📅 2026-10-08
+ -->
 
 ## Cine sunt eu?
+
+<br>
 
 Mă numesc **Nicu Calcea**.
 
@@ -61,7 +66,7 @@ Am absolvit și predat la **City, University of London**, și am făcut jurnalis
 
 ## Mai multe informații despre mine
 
-- [nicu.md](https://nicu.md/)
+- [Site personal](https://nicu.md/)
 - [SAMIZDATA](https://samizdata.co/ro)
 - [mail@nicu.md](mailto:mail@nicu.md)
 
@@ -86,28 +91,7 @@ Am absolvit și predat la **City, University of London**, și am făcut jurnalis
 - 15:30 — Exercițiu de grup
 - 16:30 — Întrebări și răspunsuri, resurse suplimentare, discuții
 
-<!-- - 10:00–10:15 — Introduceri și obiective
-- 10:15–11:30 — Ce este jurnalismul de date?
-- 11:30–11:45 — Baze de date
-- 11:45–12:30 — Exercițiu: Disparitatea salarială de gen
-- *12:30–13:30 — Pauză de prânz*
-- 13:30–13:00 — Instrumente AI
-- 14:00–15:00 — Vizualizarea datelor
-- 15:00–15:30 — Exercițiu: TBD
-- 15:30–16:30 — Exercițiu de grup: redactarea unui scurt articol pe baza datelor reale
-- 16:30–17:00 — Întrebări și răspunsuri, resurse suplimentare, discuții -->
-
 ::: {.incremental}
-<!--
-- 10:00–10:30 — Introduceri și obiective
-- 10:30–11:30 — Baze de date guvernamentale și externe
-- 11:30–12:30 — Curățarea și structurarea datelor
-- 12:30–13:30 — Pauză de prânz
-- 13:30–14:30 — Analiza și interpretarea datelor
-- 14:30–15:30 — Vizualizarea datelor
-- 15:30–16:30 — Exercițiu de grup: redactarea unui scurt articol pe baza datelor reale
-- 16:30–17:00 — Întrebări și răspunsuri, resurse suplimentare, discuții
--->
 :::
 
 
@@ -242,11 +226,87 @@ Sursă: [Paul Bradshaw](https://twitter.com/paulbradshaw/status/1445015559742050
 :::
 
 
-# Baze de date {fullscreen=true}
+## Ce sunt datele deschise?
 
-<iframe class="stretch" data-src="https://samizdata.co/"></iframe>
+Definiția oficială:
+
+- **Date oficiale**: Direct din registrele și sistemele instituțiilor publice.
+- **Acces gratuit**: Fără înregistrare, accesibil oricui, oricând.
+- **Format deschis**: XLS/XLSX, ~~PDF~~, ~~DOCX~~, CSV, ZIP — prelucrabile automat.
+
 ::: footer
-Sursă: [SAMIZDATA](https://samizdata.co/)
+Sursă: [Agenția de Guvernare Electronică](https://date.gov.md/#:~:text=Date%20deschise%20prin%20defini%C8%9Bie)
+:::
+
+## Ce sunt datele deschise?
+
+Eu aș adăuga:
+
+- **Date structurate**: Date publicate în formate accesibile atât pentru oameni, cât și pentru software (CSV, JSON, XML, RDF, nu PDF sau DOCX).
+- **Licență deschisă**: Datele pot fi utilizare fără restricții.
+
+## Ce întrebări pot răspunde datele deschise?
+
+- Unde sunt cele mai mari disparități regionale?
+- Există diferențe între zonele urbane și rurale?
+- Ce categorii de populație beneficiază cel mai puțin de un serviciu public?
+- Unde trebuie prioritizate investițiile?
+- Ce programe publice produc rezultate?
+- Cum s-au schimbat indicatorii după introducerea unei politici?
+- Cum poate fi îmbunătățită alocarea resurselor publice?
+
+
+
+# Situația din Moldova
+
+## Clasament
+
+[![](media/odin-ranking-md.png)](https://odin.opendatawatch.com/country-profiles/MDA?year=2024)
+
+::: footer
+Sursă: [Open Data Inventory](https://odin.opendatawatch.com/country-profiles/MDA?year=2024)
+:::
+
+<!-- ## Ce zice OGP?
+
+> Planul de acțiune Open Government Partnership OGP al Republicii Moldova pentru 2023–2025 a înregistrat niveluri ridicate de implementare și o colaborare puternică între guvern și societatea civilă. -->
+
+
+## Legea 109/2025
+
+- transpune parțial Directiva (UE) 2019/1024 și înlocuiește Legea nr. 305/2012;
+- acoperă organismele publice, întreprinderile publice și datele din cercetarea finanțată public;
+- introduce seturi de date cu valoare ridicată, reutilizare gratuită (cu excepții) și o licență standard pentru date deschise;
+- exclude datele personale și informațiile protejate prin lege.
+
+::: footer
+Sursă: [Registrul de stat al actelor juridice](https://www.legis.md/cautare/getResults?doc_id=148946&lang=ro)
+:::
+
+
+## Baze de date {fullscreen=true}
+
+<iframe class="stretch" data-src="https://samizdata.co/training/sources/moldova/"></iframe>
+::: footer
+Sursă: [SAMIZDATA](https://samizdata.co/training/sources/moldova/)
+:::
+
+
+## Probleme
+
+- Datele sunt deseori publicate în formate inaccesibile (PDF, DOCX) sau neuniforme
+- Multe seturi de date nu sunt actualizate la timp, au câmpuri incomplete
+- Acces limitat la date în administrația publică locală
+- Echilibru neclar cu protecția datelor personale
+- Datele existente nu sunt utilizare suficient (ceea ce încercăm să rezolvăm aici)
+
+
+# Instrumente
+
+<iframe class="stretch" data-src="https://samizdata.co/training/toolbox/"></iframe>
+
+::: footer
+Sursă: [SAMIZDATA](https://samizdata.co/training/toolbox/)
 :::
 
 
@@ -539,7 +599,9 @@ Show Moldova investigation skills in an Obsidian vault (research Ion Onțu).
 - [mcptools](https://posit-dev.github.io/mcptools/) / [btw](https://posit-dev.github.io/btw/) pentru R
 
 ::: notes
-Show how to use the Datawrapper MCP to reproduce the exercise earlier.
+<!-- Show how to use the Datawrapper MCP to reproduce the exercise earlier. -->
+
+Show how to use the [OpenRegister MCP](https://openregistry.sophymarine.com/) to create a profile for "Heim Partners Ltd", connected to Vasile Tofan
 :::
 
 ## Agenți dedicați
@@ -555,6 +617,34 @@ Pe lângă skill-uri și plugin-uri, jurnaliștii pot utiliza agenți AI creați
 ::: notes
 Show Gemini Notebooks, maybe talk about Augmenta.
 :::
+
+
+## 
+
+[![](https://miro.medium.com/v2/1*Suc4msw5d_BwlmktKPorZg.png)](https://generative-ai-newsroom.com/how-a-tiny-newsroom-built-its-own-public-meeting-monitor-eaa10962018b)
+
+::: footer
+Sursă: [Generative AI in the Newsroom](https://generative-ai-newsroom.com/how-a-tiny-newsroom-built-its-own-public-meeting-monitor-eaa10962018b)
+:::
+
+
+## 
+
+<iframe class="stretch" data-src="https://dataculture.northeastern.edu/2026/09/17/scicar-learn-carefully.html"></iframe>
+
+::: footer
+Sursă: [Northeastern University](https://dataculture.northeastern.edu/2026/09/17/scicar-learn-carefully.html)
+:::
+
+
+## 
+
+<iframe class="stretch" data-src="https://www.ire.org/2026/08/13/using-llms-in-data-journalism-can-be-trustworthy-if-these-five-elements-are-in-your-methodology/"></iframe>
+
+::: footer
+Sursă: [Investigative Reporters & Editors](https://www.ire.org/2026/08/13/using-llms-in-data-journalism-can-be-trustworthy-if-these-five-elements-are-in-your-methodology/)
+:::
+
 
 
 # Vizualizarea datelor
@@ -579,30 +669,30 @@ Vizualizarea acestora ne poate oferi informații pe care altfel le-am pierde.
 
 ## Ce putem vizualiza? {.smaller background-color="white"}
 
-Poziție ![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png){.absolute top=100 right=50 width="500" height="500"}
+Poziție ![](media/charts/Scatter-Plot.png){.absolute top=100 right=50 width="500" height="500"}
 
 ::: {.fragment}
 Mărime
 
-&nbsp;&nbsp;&nbsp;&nbsp;Lățime ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Horizontal-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+&nbsp;&nbsp;&nbsp;&nbsp;Lățime ![](media/charts/Bar-Chart-Horizontal.webp){.absolute top=100 right=50 width="500" height="500"}
 :::
 
 ::: {.fragment}
-&nbsp;&nbsp;&nbsp;&nbsp;Înălțime ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+&nbsp;&nbsp;&nbsp;&nbsp;Înălțime ![](media/charts/Bar-Chart-Vertical.webp){.absolute top=100 right=50 width="500" height="500"}
 :::
 
 ::: {.fragment}
-&nbsp;&nbsp;&nbsp;&nbsp;Suprafață ![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+&nbsp;&nbsp;&nbsp;&nbsp;Suprafață ![](media/charts/Stacked-Area-Chart.webp){.absolute top=100 right=50 width="500" height="500"}
 :::
 
 ::: {.fragment}
 Culoare
 
-&nbsp;&nbsp;&nbsp;&nbsp;Umplutură ![](https://datavizproject.com/wp-content/uploads/types/Pictorial-Stacked-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+&nbsp;&nbsp;&nbsp;&nbsp;Umplutură ![](media/charts/Pictorial-Stacked-Chart.webp){.absolute top=100 right=50 width="500" height="500"}
 :::
 
 ::: {.fragment}
-&nbsp;&nbsp;&nbsp;&nbsp;Culoare ![](https://datavizproject.com/wp-content/uploads/types/Cluster-Analysis-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+&nbsp;&nbsp;&nbsp;&nbsp;Culoare ![](media/charts/Cluster-Analysis.webp){.absolute top=100 right=50 width="500" height="500"}
 :::
 
 ::: {.fragment}
@@ -610,11 +700,11 @@ Culoare
 
 &nbsp;&nbsp;&nbsp;&nbsp;Model
 
-Formă ![](https://datavizproject.com/wp-content/uploads/types/Matrix-Diagram--600x600.png){.absolute top=100 right=50 width="500" height="500"}
+Formă ![](media/charts/Matrix-Diagram-.webp){.absolute top=100 right=50 width="500" height="500"}
 :::
 
 ::: {.fragment}
-Locație ![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+Locație ![](media/charts/Choropleth-Map.webp){.absolute top=100 right=50 width="500" height="500"}
 :::
 
 
@@ -664,11 +754,13 @@ Sursă: [SAMIZDATA](https://samizdata.co/training/toolbox#visualisation)
 - [Data Visualisation Catalogue](https://datavizcatalogue.com/)
 
 
+
+
 ## Bare/coloane { background-color="white"}
 
 ::: columns
 ::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical.png)
+![](media/charts/Bar-Chart-Vertical.webp)
 :::
 
 ::: {.column width="40%"}
@@ -682,7 +774,7 @@ Potrivit pentru a compara numere sau a arăta trend-uri.
 
 ::: columns
 ::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Line-Graph.png)
+![](media/charts/Line-Graph.png)
 :::
 
 ::: {.column width="40%"}
@@ -697,7 +789,7 @@ Potrivit pentru a arăta trend-uri.
 
 ::: columns
 ::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart.png)
+![](media/charts/Stacked-Area-Chart.webp)
 :::
 
 ::: {.column width="40%"}
@@ -711,7 +803,7 @@ Potrivit pentru a arăta trend-uri.
 
 ::: columns
 ::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png)
+![](media/charts/Scatter-Plot.png)
 :::
 
 ::: {.column width="40%"}
@@ -725,7 +817,7 @@ Potrivit pentru a ilustra corelația dintre diferite serii de date.
 
 ::: columns
 ::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png)
+![](media/charts/Choropleth-Map.webp)
 :::
 
 ::: {.column width="40%"}
@@ -926,189 +1018,6 @@ Show how to do this with AI, maybe with the datawrapper MCP
 </style>
 ```
 
-- [nicu.md](https://nicu.md/)
+- [Site personal](https://nicu.md/)
 - [SAMIZDATA](https://samizdata.co/ro)
 - [mail@nicu.md](mailto:mail@nicu.md)
-
-<!-- 
-## Baby names
-
-1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1GatzEY5cl3JmdVOpJKsF9ME-SSHNNi8dVfqm54ZONYA/copy) and pick one tab to work in. Data from [the ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesinenglandandwalesfrom1996).
-2. The [ yellow cells ]{style="background:#e3b341;color:black;"} indicate where you need to fill in formulas.
-3. What are some other potential stories that you can think of? Are there more babies named after the royals? What about Game of Thrones characters? What are the most popular gender-neutral names? Long-term trends?
-
-::: notes
-Show the original dataset first
-
-Some datasets (like the ONS one) come with a data dictionary.
-
-For Nicu: choose boys or girls based on if there are more women or men in the group
-:::
-
-## Baby names exercise
-
-1. Download the file with baby names in England and Wales for [girls](https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsboys/2021/2021boysnamesupdated1.xlsx) or [boys](https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsgirls/2021/2021girlsnames.xlsx).
-2. Upload the spreadsheet to Google Drive and open it in Google Sheets.
-3. Find and clean Table 1.
-4. Read about [Shart](https://www.thecourier.co.uk/fp/courier-investigations/3168365/baby-name-rules-scotland/).
-
-::: notes
-https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2021/relateddata
-:::
-
-
-
-
-
-**Maps**<br>
-<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-## Choropleth {background-color="white"}
-
-::: columns
-::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png)
-:::
-
-::: {.column width="40%"}
-Pre-defined areas such as countries, regions or districts are coloured (either sequential, diverging or categorical) in proportion to values in a dataset.
-:::
-:::
-
-## Bubble/symbol map {background-color="white"}
-
-::: columns
-::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Bubble-Map.png)
-:::
-
-::: {.column width="40%"}
-Circles are drawn on top of a map, with their size or colour proportional to values in a dataset.
-:::
-:::
-
-## Cartogram / hex map {background-color="white"}
-
-::: columns
-::: {.column width="60%"}
-![](https://datavizproject.com/wp-content/uploads/types/Cartogram.png)
-:::
-
-::: {.column width="40%"}
-Cartograms resize regions in proportion to a variable in your dataset, such as population.
-<br><br>
-Hex maps standardise administrative units into same-sizes hexagons, squares or triangles.
-:::
-:::
-
-
-
-
-
-## The Martini Glass principle {background-color="#EAE8E3"}
-
-![](https://miro.medium.com/v2/1*Jca05UCRvx-iJ96zGIFQkw.jpeg){width="100%"}
-
-::: notes
-Kicker
-This is the top line you want to tell your audience. What does the data say? What will people share on Twitter?
-
-Explanation
-Guide your reader through your story, exposing different facets of your data.
-
-Exploration
-Let your readers explore the data on their own to find the stories that are relevant to them.
-:::
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html"></iframe>
-::: footer
-Sursă: [Gurman Bhatia](https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/"></iframe>
-::: footer
-Sursă: [Masters of Media](https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/)
-:::
-
-
-## Trackers {fullscreen=true .smaller background-color="white"}
-
-::: columns
-::: {.column width="66.66%"}
-<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://nsmg-projects-public.s3.eu-west-2.amazonaws.com/live/nsmg-031/index.html' frameborder='0' allowfullscreen></iframe></div>
-:::
-
-::: {.column width="33.33%"}
-Trackers are data visualisations connected to a data source that is periodically updated.
-<br><br>
-Examples include [FiveThirtyEight's Biden approval rating tracker](https://projects.fivethirtyeight.com/biden-approval-rating/), [Bloomberg's Pret Index](https://www.bloomberg.com/graphics/pret-index/) and [the New Statesman's Covid-19 tracker](https://www.newstatesman.com/science-tech/2021/11/uk-covid-tracker-latest-data-local-authority).
-:::
-:::
-
-::: footer
-Sursă: [New Statesman](https://www.newstatesman.com/science-tech/2021/12/uk-covid-tracker-latest-data-local-authority)
-:::
-
-
-## Calculators {fullscreen=true .smaller background-color="white"}
-
-::: columns
-::: {.column width="66.66%"}
-<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://flo.uri.sh/visualisation/15816210/embed' frameborder='0' allowfullscreen></iframe></div>
-:::
-
-::: {.column width="33.33%"}
-Calculators allow readers to input their own data and receive a result.
-<br><br>
-Examples include the [FT personal data worth calculator](https://ig.ft.com/how-much-is-your-personal-data-worth/), [the New Statesman election calculator](https://www.newstatesman.com/politics/elections/2021/08/election-win-calculator) and [the BBC's energy calculator](https://www.bbc.co.uk/news/business-67489975).
-:::
-:::
-
-::: footer
-Sursă: [BBC News](https://www.bbc.co.uk/news/business-67489975)
-:::
-
-
-## Scrollable stories {fullscreen=true .smaller background-color="#111311"}
-
-::: columns
-::: {.column width="66.66%"}
-<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://news.test.files.bbci.co.uk/include/vjneareast/1230-critical-minerals/develop/english/app/test--full-width.html' frameborder='0' allowfullscreen></iframe></div>
-:::
-
-::: {.column width="33.33%"}
-Scrollytelling is the use of a browser's scrolling functionality to interactively tell a data story.
-<br><br>
-Examples include [The Impatient List](https://xujunjiejack.github.io/), [the New York Times delta variant story](https://www.nytimes.com/interactive/2021/08/12/science/covid-delta-breakthrough.html) and [the New Statesman million years lost investigation](https://www.newstatesman.com/world/uk/2021/04/exclusive-covid-19-robbed-decade-life-average-victim-england-and-wales).
-:::
-:::
-
-::: footer
-Sursă: BBC News
-:::
-
-
-##
-
-> Information visualisation is meant to clarify data, but too much interactivity hinders understanding by transferring responsibility from the designer to the reader to work out the important points. --- **[Martin Stabe (FT)](https://www.ft.com/content/c62b21c6-7feb-11e6-8e50-8ec15fb462f4)**
-
-. . .
-
-> Readers just want to scroll, […] if you make the reader click or do anything other than scroll, something spectacular has to happen. --- **[Archie Tse (NYT)](https://raw.githubusercontent.com/archietse/malofiej-2016/master/tse-malofiej-2016-slides.pdf)**
-
-
-##
-
-> Interactive graphics are not just a fun addition but can actually increase the transparency of our work, open us for criticism, and thereby, hopefully, help re-build some trust in journalism. --- **[Gregor Aisch (Datawrapper)](https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/)**
-
-## Various resources
-- [Math for journalists](https://observablehq.com/@nshiab/math-for-journalists)
-- [Reporting with numbers](https://www.reportingwithnumbers.com/)
-- [Rate my visualization](https://stephanieevergreen.com/rate-your-visualization/)
-
-
-
--->
