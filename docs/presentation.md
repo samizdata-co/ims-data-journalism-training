@@ -42,9 +42,8 @@ filters:
 </style>
 ```
 
-<!-- 
-- [ ] Add QR code 📅 2026-10-08
- -->
+![](media/qr-code.svg)
+
 
 ## Cine sunt eu?
 
