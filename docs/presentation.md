@@ -10,14 +10,14 @@ format:
     multiplex: true
     chalkboard:
       buttons: false
-filters:
+filters:r q
   - filters/newpagelink.lua
 #   - quarto
 # href: city
 ---
 
 
-# [👋]{.wave} Bun venit la training-ul<br>"Analiză și Storytelling de Date"
+# [👋]{.wave} Bun venit
 
 ```{=html}
 <style>
