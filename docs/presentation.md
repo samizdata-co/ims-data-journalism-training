@@ -10,7 +10,7 @@ format:
     multiplex: true
     chalkboard:
       buttons: false
-filters:r q
+filters:
   - filters/newpagelink.lua
 #   - quarto
 # href: city
